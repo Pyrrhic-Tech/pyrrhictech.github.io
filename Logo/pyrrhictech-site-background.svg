@@ -1,0 +1,40 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300' viewBox='0 0 80 80'>
+<g fill='none' stroke='#23b87333' stroke-width='0.5' opacity='0.38'>
+
+-- horizontal --
+
+<line x1='0' y1='20' x2='25' y2='20'/>
+<line x1='55' y1='20' x2='80' y2='20'/>
+<line x1='0' y1='60' x2='15' y2='60'/>
+<line x1='45' y1='60' x2='80' y2='60'/>
+<line x1='30' y1='40' x2='80' y2='40'/>
+
+-- vertical --
+
+<line x1='20' y1='0' x2='20' y2='15'/>
+<line x1='20' y1='25' x2='20' y2='55'/>
+<line x1='20' y1='65' x2='20' y2='80'/>
+<line x1='60' y1='0' x2='60' y2='35'/>
+<line x1='60' y1='45' x2='60' y2='80'/>
+<line x1='40' y1='0' x2='40' y2='40'/>
+
+-- joints --
+
+<line x1='25' y1='20' x2='25' y2='40'/>
+<line x1='25' y1='40' x2='30' y2='40'/>
+<line x1='15' y1='60' x2='15' y2='40'/>
+<line x1='15' y1='40' x2='0' y2='40'/>
+<line x1='45' y1='60' x2='45' y2='40'/>
+
+-- pads --
+
+<circle cx='20' cy='20' r='3' fill='#23b87333' opacity='0.3'/>
+<circle cx='60' cy='20' r='3' fill='#23b87333' opacity='0.3'/>
+<circle cx='20' cy='60' r='3' fill='#23b87333' opacity='0.3'/>
+<circle cx='60' cy='60' r='3' fill='#23b87333' opacity='0.3'/>
+<circle cx='40' cy='40' r='3' fill='#23e8891a' opacity='0.3'/>
+<circle cx='25' cy='40' r='2' fill='#23b87333' opacity='0.15'/>
+<circle cx='45' cy='40' r='2' fill='#23b87333' opacity='0.15'/>
+<circle cx='15' cy='40' r='2' fill='#23b87333' opacity='0.15'/>
+</g>
+</svg>
