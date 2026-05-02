@@ -1,3 +1,14 @@
+/* root */
+:root {
+    --black: #0d0d0d;
+    --charcoal: #1a1a1a;
+    --copper: #b87333;
+    --copper-bright: #e8891a;
+    --white: #f0ece4;
+    --white-dim: #9e9890;
+    --border: #2a2a2a;
+}
+
 /* header styles */
 *{
     margin: 0;
@@ -5,26 +16,42 @@
     box-sizing: border-box;
 }
 
+header img {
+    max-width: 200px;
+    height: auto;
+}
+
 /* body styles */
 body {
     background-color: #0d0d0d;
     background-image: 
-        radial-gradient(ellipse at 0% 100%, rgba(184,115,51,0.06) 15%, transparent 25%),
-        radial-gradient(ellipse at 100% 100%, rgba(184,115,51,0.06) 15%, transparent 25%),
+    radial-gradient(ellipse at 0% 100%, rgba(236, 163, 95, 0.06) 15%, transparent 25%),
+    radial-gradient(ellipse at 100% 100%, rgba(236, 163, 95, 0.06) 15%, transparent 25%),
     url("Logo/pyrrhictech-site-background.svg");
     background-size:
-        100% 100%,
-        100% 100%,
-        80px 80px;
+    100% 100%,
+    100% 100%,
+    80px 80px;
     background-repeat:
-        no-repeat,
-        no-repeat,
-        repeat;
+    no-repeat,
+    no-repeat,
+    repeat;
     background-attachment: 
     fixed;
     padding: 0;
     margin: 0;
-    }
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    padding-top: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    flex: 1;
+}
 
 /* navigation styles */
 nav a {
@@ -46,8 +73,8 @@ nav a:hover {
 nav a[aria-current="page"] {
     color: #e8891a;
     font-weight: bold;
-
-
+    
+    
 }
 
 header {
@@ -63,9 +90,21 @@ header {
     width: 100%;
 }
 
+footer {
+    color: #7777;
+    text-align: center;
+    padding: 20px 40px;
+    border-top: 1px solid var(--border);
+    font-size: 11px;
+    color: var(--white-dim);
+    letter-spacing: 2px;   
+}
+
+/* About Page */
+
 .about-hero {
-        text-align: center;
-        padding: 80px 20px 60px;
+    text-align: center;
+    padding: 80px 20px 60px;
 }
 
 .about-hero h1 {
@@ -100,4 +139,168 @@ header {
     font-size: 1.5rem;
     color: #b87333;
     margin-bottom: 40px;
+}
+
+/* Contact Page */
+
+.social-btn{
+    background-color: #1a1a1a;
+    border: #2a2a2a;
+    color: #b87333;
+    padding: 14px 28px;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 3px;
+    font-size: 32px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: border-color 0.2s ease, color 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    min-width: 280px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(184, 115, 51, 0.2);
+    border-radius: 20px;
+}
+
+.social-btn:hover{
+    border-color: 1px solid #b87333;
+    color: #e8891a;
+    box-shadow: 0 0 18px rgba(184, 115, 51, 0.4);
+    background-color:#2a2a2a;
+    border-radius: 35px;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.contact-hero h1 {
+    color: white;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 3px;
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+.contact-hero .lead{
+    color: #b87333;
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 1.5px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    margin-top: 40px;
+    border-radius: 25%;
+}
+
+/* Index Page */
+
+.hero {
+    text-align: center;
+    padding: 120px 40px 80px;
+}
+
+.hero h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 12px;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.hero-sub {
+    font-size: 1.4rem;
+    color: var(--copper);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.about-brief {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--white-dim);
+    line-height: 1.8;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.prodicts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.product-card {
+    background: var(--charcoal);
+    border: 1px solid var(--border);
+    padding: 32px;
+    transition: border-color 0.2s ease;
+    text-align: center;
+}
+
+.product-card:hover {
+    border-color: var(--copper);
+}
+
+.product-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 4px;
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    color: var(--white-dim);
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.coming-soon {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: var(--copper);
+    text-transform: uppercase;
+}
+
+/* mobile friendly */
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+        letter-spacing: 6px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 20px 60px;
+    }
 }
